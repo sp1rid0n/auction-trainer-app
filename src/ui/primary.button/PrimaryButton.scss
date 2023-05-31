@@ -1,0 +1,16 @@
+.primary-button {
+    all: unset;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    width: 100%;
+    box-sizing: border-box;
+
+    &--gray {
+        border: none;
+        background-color: #FAFAFA;
+        box-shadow: inset 0px 0px 10px rgba(117, 117, 117, 0.2);
+    }
+}

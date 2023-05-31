@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import CustomRouter from './routes';
+import { RouterProvider } from 'react-router-dom'
+import './App.scss';
+import { router } from './navigation/nav.items';
 
-const App: React.FC = () => {
-    return (
-        <BrowserRouter> 
-            <CustomRouter/>
-        </BrowserRouter>
-    );
+
+function App() {
+
+  return (
+    <RouterProvider router={router}/>
+  );
 }
 
 export default App;

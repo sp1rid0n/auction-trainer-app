@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.auction-results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: $desktop-breakpoint) {
+            width: $desktop-medium-content-width;
+        }
+    }
+
+    &__title {
+        all: unset;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__lots-container {
+        flex: 1;
+    }
+
+    &__lot {
+        margin-bottom: 12px;
+    }
+}

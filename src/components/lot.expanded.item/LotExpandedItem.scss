@@ -1,0 +1,56 @@
+.lot-expanded-item {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(117, 117, 117, 0.4);
+    padding: 12px 12px; 
+    overflow: hidden;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        
+        &--expanded {
+            padding-bottom: 12px;
+        }
+    }
+
+    &__name {
+        flex: 1;
+        text-align: start;
+    }
+
+    &__status {
+        width: 90px;
+        color: #C5C5CB;
+    }
+
+    &__expander-icon {
+        width: 24px;
+        cursor: pointer;
+
+        &--up {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info-item-label {
+        margin-right: 4px;
+    }
+
+}
+
+.bid {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #E6E4E7;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &__value {
+        margin-left: 4px;
+    }
+}

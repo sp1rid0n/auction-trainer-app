@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.auction-for-creator-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        @media (min-width: $desktop-breakpoint) {
+            width: $desktop-medium-content-width;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__access-code {
+        display: flex;
+        align-items: center;
+    }
+
+    &__access-code-label {
+        margin-right: 4px;
+    }
+
+    &__access-code-value {
+        width: 80px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        @media (min-width: $desktop-breakpoint) {
+            width: 200px;
+        }
+    }
+
+    &__lots-container {
+        flex: 1;
+    }
+
+    &__lot-item {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
